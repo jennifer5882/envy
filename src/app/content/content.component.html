@@ -1,0 +1,25 @@
+<section id="content">
+
+<div class="slideshow-container">
+  <div class="slideshow-caption-container"><div class="slideshow-caption"></div></div>
+  <div class="slideshow"><img src="http://via.placeholder.com/980x550"></div>
+</div>
+<div class="categories">
+  <div><img src="http://via.placeholder.com/284x210"></div>
+  <div><img src="http://via.placeholder.com/284x210"></div>
+  <div><img src="http://via.placeholder.com/284x210"></div>
+  <div><img src="http://via.placeholder.com/284x210"></div>
+</div>
+<section class="featured">
+  <h1>Featured Products</h1>
+</section>
+<ul class="featured-products products">
+  <li *ngFor="let product of products">
+    <img src="{{product.imgSrc}}">
+    <p class="product-title">{{product.title}}</p>
+    <p class="product-price">{{product.price | currency:'USD'}}</p>
+  </li>
+</ul>
+<button class="button">Shop All</button>
+
+</section>

@@ -1,0 +1,55 @@
+#nav {
+    background-color: #00d5d5;
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#nav-social {
+    float: right;
+}
+
+#nav-social > a {
+    margin: 3px;
+}
+
+
+#nav-links {
+    list-style: none;
+    padding: 16.5px 0px 16.5px 0px;
+    font-size: 16px;
+}
+
+#nav-links {
+    margin: auto;
+    width: 1183px;
+}
+
+#nav-links > li {
+    display: inline;
+    margin: 0px 0px 0px 44px;
+}
+
+#nav-links > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+#splash {
+    margin: 55px 0px 50px 0px;
+    padding: 24px 192px 24px 192px;
+}
+
+#logo {
+    margin: auto;
+    height: 192px;
+    width: 480px;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/millennial-birthmom.appspot.com/o/millenial-birthmom-01.png?alt=media&token=19b94f8c-2651-484d-ae95-a7da184f5652");
+}
+
+footer {
+    background-color: #383634;
+    margin: 0;
+    overflow: auto;
+}

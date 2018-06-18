@@ -1,0 +1,18 @@
+<section id="content-detail">
+    <div class="product-image">
+        <img src="https://cdn.shopify.com/s/files/1/0024/5084/9851/products/mockup-06988e2d_720x.jpg?v=1527977844">
+    </div>
+    <div class="product-description">
+        <h1>Adult-ish Deep V-Neck Tee</h1>
+        <p>$23.99</p>
+        <hr>
+        <div class="size">
+            <mat-form-field>
+                <mat-select placeholder="Choose a Size">
+                    <mat-option *ngFor="let size of sizes" value="{{size}}">{{size}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <button mat-raised-button>Add to Cart</button>
+        </div>
+    </div>
+</section>
