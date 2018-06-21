@@ -12,7 +12,52 @@
                     <mat-option *ngFor="let size of sizes" value="{{size}}">{{size}}</mat-option>
                 </mat-select>
             </mat-form-field>
+        <div class="color">
+                <mat-form-field>
+                    <mat-select placeholder="Choose a Color">
+                        <mat-option *ngFor="let color of colors" value="{{color}}">{{color}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+        </div>
             <button mat-raised-button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="product-description">
+    <p>A unique and soft deep V-neck cut tee. This shirt has a semi-relaxed, feminine fit, and flattering short sleeves.<br /> <br /> • Triblend (50% poly / 25% airlume combed and ring-spun cotton / 25% rayon)<br /> • Deep V-neck cut<br /> • Side-seamed</p>
+    <div class="size-guide">
+        <p><strong>Size guide</strong></p>
+        <div class="table-responsive dynamic" data-unit-system="imperial">
+            <table cellpadding="5">
+                <tbody>
+                <tr>
+                <td> </td>
+                <td><strong>S</strong></td>
+                <td><strong>M</strong></td>
+                <td><strong>L</strong></td>
+                <td><strong>XL</strong></td>
+                <td><strong>2XL</strong></td>
+                </tr>
+                <tr>
+                <td><strong>Width (inches) </strong></td>
+                <td>15 5/8</td> 
+                <td>16 3/8</td>
+                <td>17 3/8</td>
+                <td>18 3/8</td>
+                <td>19 3/8</td>
+                </tr>
+                <tr>
+                <td><strong>Length (inches) </strong></td>
+                <td>25 7/8</td>
+                <td>26 3/8</td>
+                <td>27</td>
+                <td>27 5/8</td>
+                <td>28 1/4</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </section>

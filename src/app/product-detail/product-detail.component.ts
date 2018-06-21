@@ -25,6 +25,15 @@ export class ProductDetailComponent implements OnInit {
     '6T',
   ];
 
+  colors = [
+    'Black',
+    'White',
+    'Charcoal Triblend',
+    'Heather Grey',
+    'Fuschia',
+    'Tahiti Blue',
+  ];
+
   constructor() { }
 
   ngOnInit() {
