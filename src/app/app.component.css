@@ -4,6 +4,7 @@
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 #nav-social {
@@ -52,4 +53,21 @@ footer {
     background-color: #383634;
     margin: 0;
     overflow: auto;
+    padding: 25px 0px 0px 0px;   
+}
+
+footer > a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 10px 100px 10px 100px;
+    font-size: 18px;
+}
+
+footer > p {
+    color: white;
+    font-size: 18px;
+    float: right;
+    margin: 10px 100px 10px 100px;
+    vertical-align: top;
 }
