@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "./dist/envy",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
