@@ -62,7 +62,7 @@ h1 {
     padding-left: 5px;
 }
 
-.featured-products > li > img {
+.featured-products > li > a > img {
     margin-left: -5px;
     margin-top: 20px;
     padding-left: 10px;

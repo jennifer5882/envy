@@ -15,9 +15,11 @@
 </section>
 <ul class="featured-products products">
   <li *ngFor="let product of products">
-    <img src="{{product.imgSrc}}">
-    <p class="product-title">{{product.title}}</p>
-    <p class="product-price">{{product.price | currency:'USD'}}</p>
+    <a href="product">
+      <img src="{{product.imgSrc}}">
+      <p class="product-title">{{product.title}}</p>
+      <p class="product-price">{{product.price | currency:'USD'}}</p>
+    </a>
   </li>
 </ul>
 <button class="button">Shop All</button>

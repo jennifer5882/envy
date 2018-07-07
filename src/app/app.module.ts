@@ -17,6 +17,7 @@ const appRoutes: Routes = [
   { path: 'returns', component: ReturnsComponent },
   //{ path: 'faq', component: FAQComponent },
   { path: 'content', component: ContentComponent },
+  { path: 'product', component: ProductDetailComponent },
   { path: '', redirectTo: '/content', pathMatch: 'full' }
 ]
 
