@@ -1,0 +1,40 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="instructions">
+  <h3>Thanks For Stopping By!</h3>
+  <p>Have a question about a product? Need wholesale information? Want to make a custom order request? 
+    You are in the right place! Let us know what you need, and we wil get back to you in 24-48 hours!</p>
+</div>
+<section>
+    <div class="contact-form">
+        <mat-form-field>
+            <input matInput placeholder="Name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email Address">
+        </mat-form-field>
+        <mat-form-field class="message">
+            <input matInput placeholder="Message">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-select placeholder="How Did You Hear About Us?">
+                <mat-option *ngFor="let x of options" value="{{x}}">{{x}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Submit</button>
+    </div>
+    <div class="contact-info">
+        <p> Phone: (503) 915-9915</p>
+        <p> E-Mail: <a href='hello@envyclothing.net'>hello@envyclothing.net</a></p>
+        <p>Made with
+            <button mat-icon-button color="primary">
+                <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+            </button> 
+        in San Francisco</p>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="450" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=San%20Francisco%2C%20CA&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+

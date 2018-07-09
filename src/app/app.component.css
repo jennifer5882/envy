@@ -1,5 +1,5 @@
 #nav {
-    background-color: #00d5d5;
+    background-color: #00BCD4;
     height: 55px;
     width: 100%;
     position: fixed;
@@ -7,12 +7,26 @@
     z-index: 1;
 }
 
-#nav-social {
+#nav-social > div > a, #nav-social > h3, .footer-links > a, footer > p {
+    margin: 10px;
+    color: white;
+}
+
+#nav-social > div {
+    text-align: center;
+}
+
+#utilities {
+    margin-right: 100px;
     float: right;
 }
 
-#nav-social > a {
-    margin: 3px;
+#utilities > a {
+    padding: 10px;
+}
+
+#search > i {
+    margin-right: 100px;
 }
 
 
@@ -34,7 +48,8 @@
 
 #nav-links > li > a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #splash {
@@ -53,11 +68,10 @@ footer {
     background-color: #383634;
     margin: 0;
     overflow: auto;
-    padding: 25px 0px 0px 0px;   
+    padding: 25px 5% 0px 5%;   
 }
 
-footer > a {
-    color: white;
+.footer-links > a {
     text-decoration: none;
     display: block;
     margin: 10px 100px 10px 100px;
@@ -65,9 +79,20 @@ footer > a {
 }
 
 footer > p {
-    color: white;
-    font-size: 18px;
-    float: right;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer > div > h3 {
+    text-decoration: none;
     margin: 10px 100px 10px 100px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+footer > div {
+    display: inline-block;
+    width: 33.3%;
     vertical-align: top;
 }

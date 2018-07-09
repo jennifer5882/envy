@@ -1,0 +1,31 @@
+<section id="content">
+
+  <section class="featured">
+      <h1>All Products</h1>
+  </section>
+  <div id="pagination">
+    <div><p>Showing 1-30 of 250</p></div>
+    <div class="sort">
+        <mat-form-field>
+            <mat-select placeholder="Sort By">
+                <mat-option *ngFor="let sortoption of sortoptions" value="{{sortoption}}">{{sortoption}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+  </div> 
+  <ul class="featured-products">
+    <li *ngFor="let product of products">
+      <a href="product">
+        <img src="{{product.imgSrc}}">
+        <p class="product-title">{{product.title}}</p>
+        <p class="product-price">starting at {{product.price | currency:'USD'}}</p>
+      </a>
+    </li>
+  </ul>
+  <div class="see-more">
+    <a href="#">1</a>  
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">...</a>
+  </div>
+</section>

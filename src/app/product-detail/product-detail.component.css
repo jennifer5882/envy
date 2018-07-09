@@ -37,6 +37,8 @@
 
 hr {
     width: 100px;
+    border-color: lightgrey;
+    opacity: 0.15;
 }
 
 .product-description > h6 {
@@ -59,8 +61,7 @@ hr {
     width: 100%;
     margin-top: 30px;
     font-size: 20px;
-    background-color: #00d5d5;
-    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .color {

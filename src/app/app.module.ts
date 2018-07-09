@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatSelectModule, MatButtonModule } from '@angular/material';
+import { MatSelectModule, MatButtonModule, MatToolbarModule, MatInputModule, MatIconModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -10,16 +10,20 @@ import { ReturnsComponent } from './returns/returns.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { RouterModule, Routes} from '@angular/router';
+import { CollectionComponent } from './collection/collection.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
   { path: 'privacy', component: PrivacyComponent },
   { path: 'terms', component: TermsComponent },
   { path: 'returns', component: ReturnsComponent },
-  //{ path: 'faq', component: FAQComponent },
+  // { path: 'faq', component: FAQComponent },
   { path: 'content', component: ContentComponent },
   { path: 'product', component: ProductDetailComponent },
+  { path: 'collection', component: CollectionComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '', redirectTo: '/content', pathMatch: 'full' }
-]
+];
 
 @NgModule({
   declarations: [
@@ -28,7 +32,9 @@ const appRoutes: Routes = [
     ProductDetailComponent,
     ReturnsComponent,
     PrivacyComponent,
-    TermsComponent
+    TermsComponent,
+    CollectionComponent,
+    ContactComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -38,6 +44,9 @@ const appRoutes: Routes = [
     BrowserModule,
     MatSelectModule,
     MatButtonModule,
+    MatToolbarModule,
+    MatInputModule,
+    MatIconModule,
     BrowserAnimationsModule
   ],
   providers: [],
